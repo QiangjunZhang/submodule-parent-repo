@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_minimum_Account_info</fullName>
+    <active>true</active>
+    <description>Basic info requirements from Sales management for Accounts in the system.</description>
+    <errorConditionFormula>AND(
+
+  Owner.IsActive  = false &amp;&amp; ISBLANK( Description ),
+
+ISBLANK (  NumberOfEmployees  ),
+
+ISBLANK (   BillingCountry   ),
+
+ISPICKVAL( Industry ,'Other')
+
+)</errorConditionFormula>
+    <errorMessage>Minimum Account info not complete. Check: Account Owner is current user, Description, Employees, Billing Country and Industry is not equal to 'Other'. Try again!</errorMessage>
+</ValidationRule>

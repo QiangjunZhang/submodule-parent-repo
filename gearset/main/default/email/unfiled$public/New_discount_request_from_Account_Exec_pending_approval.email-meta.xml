@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New discount request from Account Exec pending approval</name>
+    <style>none</style>
+    <subject>New discount requested by Account Exec - please review ASAP!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

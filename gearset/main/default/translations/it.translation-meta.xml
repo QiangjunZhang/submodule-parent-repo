@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label><!-- Gearset Teams for Spanish --></label>
+        <name>Gearset_Teams_for_Spanish</name>
+    </customLabels>
+    <flowDefinitions>
+        <flows />
+        <fullName>Closed_Won_Opportunities</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Account</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>firstName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>lastName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>salutationOptions</name>
+                        <value />
+                    </inputParameters>
+                    <name>contactName</name>
+                </fields>
+                <fields>
+                    <name>helloworld</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleActive</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleInactive</name>
+                        <value />
+                    </inputParameters>
+                    <name>update_toggle</name>
+                </fields>
+                <name>Contact_Info</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>confirmation_message</name>
+                </fields>
+                <name>flow_completion_message</name>
+            </screens>
+            <textTemplates>
+                <name>chatterMessage</name>
+            </textTemplates>
+        </flows>
+        <fullName>New_Contact</fullName>
+    </flowDefinitions>
+</Translations>

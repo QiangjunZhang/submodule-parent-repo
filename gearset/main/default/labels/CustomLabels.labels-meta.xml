@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Gearset_Teams_for_Spanish</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Gearset Teams for Spanish</shortDescription>
+        <value>Gearset Teams</value>
+    </labels>
+</CustomLabels>

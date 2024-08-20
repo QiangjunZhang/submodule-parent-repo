@@ -1,0 +1,165 @@
+{
+    "consolidated_weather": [
+        {
+            "air_pressure": 1011.5,
+            "applicable_date": "2021-07-01",
+            "created": "2021-07-01T15:32:43.967708Z",
+            "humidity": 69,
+            "id": 5359907575431168,
+            "max_temp": 27.945,
+            "min_temp": 21.255000000000003,
+            "predictability": 75,
+            "the_temp": 28.685000000000002,
+            "visibility": 7.837044162093374,
+            "weather_state_abbr": "lr",
+            "weather_state_name": "Light Rain",
+            "wind_direction": 274.967643380872,
+            "wind_direction_compass": "W",
+            "wind_speed": 4.267621237339272
+        },
+        {
+            "air_pressure": 1007,
+            "applicable_date": "2021-07-02",
+            "created": "2021-07-01T15:32:46.668972Z",
+            "humidity": 77,
+            "id": 6403251265077248,
+            "max_temp": 25.015,
+            "min_temp": 19.9,
+            "predictability": 75,
+            "the_temp": 24.02,
+            "visibility": 11.830286129006602,
+            "weather_state_abbr": "lr",
+            "weather_state_name": "Light Rain",
+            "wind_direction": 311.5121584169385,
+            "wind_direction_compass": "NW",
+            "wind_speed": 5.338898785768446
+        },
+        {
+            "air_pressure": 1008.5,
+            "applicable_date": "2021-07-03",
+            "created": "2021-07-01T15:32:49.715700Z",
+            "humidity": 73,
+            "id": 5665481613639680,
+            "max_temp": 20.4,
+            "min_temp": 16.46,
+            "predictability": 75,
+            "the_temp": 20.905,
+            "visibility": 10.808130517776187,
+            "weather_state_abbr": "lr",
+            "weather_state_name": "Light Rain",
+            "wind_direction": 45.50000000000001,
+            "wind_direction_compass": "NE",
+            "wind_speed": 6.187604417561442
+        },
+        {
+            "air_pressure": 1012,
+            "applicable_date": "2021-07-04",
+            "created": "2021-07-01T15:32:52.698389Z",
+            "humidity": 60,
+            "id": 4785540156096512,
+            "max_temp": 24.855,
+            "min_temp": 17.64,
+            "predictability": 73,
+            "the_temp": 24.365000000000002,
+            "visibility": 9.351636443171877,
+            "weather_state_abbr": "s",
+            "weather_state_name": "Showers",
+            "wind_direction": 237.6189691299653,
+            "wind_direction_compass": "WSW",
+            "wind_speed": 4.066974955916117
+        },
+        {
+            "air_pressure": 1015.5,
+            "applicable_date": "2021-07-05",
+            "created": "2021-07-01T15:32:55.669609Z",
+            "humidity": 57,
+            "id": 5647941436964864,
+            "max_temp": 27.145,
+            "min_temp": 19.775,
+            "predictability": 73,
+            "the_temp": 27.875,
+            "visibility": 13.646554123916328,
+            "weather_state_abbr": "s",
+            "weather_state_name": "Showers",
+            "wind_direction": 188.61781152467665,
+            "wind_direction_compass": "S",
+            "wind_speed": 5.451070102804953
+        },
+        {
+            "air_pressure": 1012,
+            "applicable_date": "2021-07-06",
+            "created": "2021-07-01T15:32:58.592375Z",
+            "humidity": 54,
+            "id": 5735014114263040,
+            "max_temp": 32.735,
+            "min_temp": 22,
+            "predictability": 73,
+            "the_temp": 33.1,
+            "visibility": 9.999726596675416,
+            "weather_state_abbr": "s",
+            "weather_state_name": "Showers",
+            "wind_direction": 231.49999999999997,
+            "wind_direction_compass": "SW",
+            "wind_speed": 6.320240793764416
+        }
+    ],
+    "latt_long": "40.71455,-74.007118",
+    "location_type": "City",
+    "parent": {
+        "latt_long": "42.855350,-76.501671",
+        "location_type": "Region / State / Province",
+        "title": "New York",
+        "woeid": 2347591
+    },
+    "sources": [
+        {
+            "crawl_rate": 360,
+            "slug": "bbc",
+            "title": "BBC",
+            "url": "http://www.bbc.co.uk/weather/"
+        },
+        {
+            "crawl_rate": 480,
+            "slug": "forecast-io",
+            "title": "Forecast.io",
+            "url": "http://forecast.io/"
+        },
+        {
+            "crawl_rate": 360,
+            "slug": "hamweather",
+            "title": "HAMweather",
+            "url": "http://www.hamweather.com/"
+        },
+        {
+            "crawl_rate": 180,
+            "slug": "met-office",
+            "title": "Met Office",
+            "url": "http://www.metoffice.gov.uk/"
+        },
+        {
+            "crawl_rate": 360,
+            "slug": "openweathermap",
+            "title": "OpenWeatherMap",
+            "url": "http://openweathermap.org/"
+        },
+        {
+            "crawl_rate": 720,
+            "slug": "wunderground",
+            "title": "Weather Underground",
+            "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b"
+        },
+        {
+            "crawl_rate": 360,
+            "slug": "world-weather-online",
+            "title": "World Weather Online",
+            "url": "http://www.worldweatheronline.com/"
+        }
+    ],
+    "sun_rise": "2021-07-01T05:28:44.780966-04:00",
+    "sun_set": "2021-07-01T20:31:10.641074-04:00",
+    "time": "2021-07-01T11:50:25.090534-04:00",
+    "timezone": "US/Eastern",
+    "timezone_name": "LMT",
+    "title": "New York",
+    "woeid": 2459115
+}

@@ -1,0 +1,221 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "SUM",
+                "text": "SUM"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "CLV",
+                "dataType": "Currency",
+                "text": "CLV",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "SUM ( CLV )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "CustomerLifetimeValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "CustomerLifetimeValue",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "CLV"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalCLV",
+            "dataType": "Currency",
+            "name": "Total CLV"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Total CLV\":\"TotalCLV\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "teamSLARetention",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/teamSLARetention",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "CustomerLifetimeValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "CustomerLifetimeValue",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "17c77e",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "SLA"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "a4ece8",
+                "dataType": "Currency",
+                "label": null,
+                "listValues": null,
+                "name": "Retention Cost"
+            },
+            {
+                "columnKey": "c650a4",
+                "dataType": "Percent",
+                "label": null,
+                "listValues": null,
+                "name": "Retention Rate"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Retention Cost\":\"teamSLARetention__RetentionCost\",\"Retention Rate\":\"teamSLARetention__RetentionRate\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "( AnnualIncome - teamSLARetention__RetentionCost ) * teamSLARetention__RetentionRate / ( One + DiscountRate - teamSLARetention__RetentionRate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "AnnualIncome",
+                "dataType": "Currency",
+                "text": "Annual Income",
+                "userDefined": true
+            },
+            {
+                "alias": "-",
+                "text": "-"
+            },
+            {
+                "alias": "teamSLARetention__RetentionCost",
+                "dataType": "Currency",
+                "text": "Retention Cost ( teamSLARetention )",
+                "userDefined": false
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "teamSLARetention__RetentionRate",
+                "dataType": "Percent",
+                "text": "Retention Rate ( teamSLARetention )",
+                "userDefined": false
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "One",
+                "dataType": "Number",
+                "text": "One"
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "DiscountRate",
+                "dataType": "Percent",
+                "text": "Discount Rate"
+            },
+            {
+                "alias": "-",
+                "text": "-"
+            },
+            {
+                "alias": "teamSLARetention__RetentionRate",
+                "dataType": "Percent",
+                "text": "Retention Rate ( teamSLARetention )",
+                "userDefined": false
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "CustomerLifetimeValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "CustomerLifetimeValue",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/CustomerLifetimeValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "Annual Income"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "CLV",
+            "dataType": "Currency",
+            "name": "CLV"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"CLV\":\"CLV\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

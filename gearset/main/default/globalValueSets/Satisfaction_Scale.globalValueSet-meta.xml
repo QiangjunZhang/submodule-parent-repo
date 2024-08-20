@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>😠</fullName>
+        <default>false</default>
+        <label>Angry - 😠</label>
+    </customValue>
+    <customValue>
+        <fullName>😞</fullName>
+        <default>false</default>
+        <label>Dissatisfied - 😞</label>
+    </customValue>
+    <customValue>
+        <fullName>😐</fullName>
+        <default>false</default>
+        <label>Neutral - 😐</label>
+    </customValue>
+    <customValue>
+        <fullName>🙂</fullName>
+        <default>false</default>
+        <label>Happy - 🙂</label>
+    </customValue>
+    <customValue>
+        <fullName>😃</fullName>
+        <default>false</default>
+        <label>Very happy - 😃</label>
+    </customValue>
+    <customValue>
+        <fullName>😍😍😍</fullName>
+        <default>false</default>
+        <label>Out of this world - 😍😍😍</label>
+    </customValue>
+    <customValue>
+        <fullName>🤩</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blown away - 🤩</label>
+    </customValue>
+    <description>Rate your satisfaction with emoji list.</description>
+    <masterLabel>Satisfaction Scale</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,11 @@
+{
+    "%vlocity_namespace%__IsDefault__c": false,
+    "Description": "An exclusive Price Book for top accounts",
+    "IsActive": true,
+    "IsArchived": false,
+    "IsStandard": false,
+    "Name": "Gearset Platinum Partners",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Pricebook2",
+    "VlocityRecordSourceKey": "Pricebook2/Gearset Platinum Partners"
+}

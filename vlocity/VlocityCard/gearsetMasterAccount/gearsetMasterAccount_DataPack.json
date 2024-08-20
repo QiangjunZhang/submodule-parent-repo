@@ -1,0 +1,40 @@
+{
+    "%vlocity_namespace%__Author__c": "Gearset",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "id": 8,
+                "name": "recordId",
+                "val": "0018d000006hbnOAAQ"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": 0,
+            "inputMap": {
+                "AccountId": "{recordId}"
+            },
+            "ipMethod": "gearset_getMasterAccountDetails",
+            "resultVar": "[\"Account\"]",
+            "vlocityAsync": false
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "gearsetMasterAccount.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "gearsetMasterAccount/Gearset/10/1666713263425",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "teamMasterAccount/Gearset/1/1625130077315",
+    "%vlocity_namespace%__SampleData__c": "{\"Account\":[{\"%vlocity_namespace%__PrimaryContactId__r\":{\"attributes\":{\"type\":\"Contact\",\"url\":\"/services/data/v56.0/sobjects/Contact/0038d000005bfUbAAI\"},\"Name\":\"Leanne Tomlin\",\"Id\":\"0038d000005bfUbAAI\"},\"Totalvalue__c\":\"£100,000,000\",\"Vlocitydemo__c\":\"hello\",\"Website\":\"www.acme.com\",\"Phone\":\"(212) 154-6060\",\"Name\":\"Acme\",\"LastModifiedDate\":\"2022-09-28T12:50:39.000Z\",\"CreatedDate\":\"2022-02-14T08:57:31.000Z\",\"BillingStreet\":\"490 Main Street\",\"BillingState\":\"NY\",\"AnnualRevenue\":22000000,\"%vlocity_namespace%__PrimaryContactId__c\":\"0038d000005bfUbAAI\",\"Id\":\"0018d000006hbnOAAQ\"}]}",
+    "%vlocity_namespace%__Styles__c": "{\"styleObjects\":{\"AccountFieldsStyle\":{\"sizeClass\":\"slds-size_11-of-12 \",\"padding\":[{\"type\":\"around\",\"size\":\"x-small\",\"label\":\"around:x-small\"}],\"margin\":[{\"type\":\"left\",\"size\":\"small\",\"label\":\"left:small\"}],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"11\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{},\"text\":{\"align\":\"\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"slds-p-around_x-small slds-m-left_small \",\"style\":\"     : #ccc 1px solid; \\n         \",\"selectedStyles\":\"AccountFieldsStyle\"}},\"styleDefaults\":{}}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 10,
+    "Name": "gearsetMasterAccount",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/gearsetMasterAccount"
+}

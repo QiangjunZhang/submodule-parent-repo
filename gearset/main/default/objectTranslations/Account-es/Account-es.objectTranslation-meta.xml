@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <recordTypes>
+        <description><!-- A record type for subscription renewals. --></description>
+        <label><!-- Gearset renewal --></label>
+        <name>Gearset_renewal</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Minimum Account info not complete. Check: Account Owner is current user, Description, Employees, Billing Country and Industry is not equal to &apos;Other&apos;. Try again! --></errorMessage>
+        <name>Enforce_minimum_Account_info</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+[
+    "CalculationProcedure/CustomerLifetimeValue",
+    "IntegrationProcedure/gearset_getMasterAccountDetails",
+    "IntegrationProcedure/gearset_getPrimaryContactDetails",
+    "IntegrationProcedure/sample_saveAccountDetails"
+]
